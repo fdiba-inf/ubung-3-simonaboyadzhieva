@@ -2,7 +2,7 @@ package exercise3;
 
 import java.util.Scanner;
 
-public class NamePrinter {
+public class NumberSearch {
 
     public static void main(String[] args) {
       

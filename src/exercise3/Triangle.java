@@ -15,7 +15,7 @@ public class Triangle {
 
             boolean correct = a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && b + c > a;
             if (correct) {
-              double s = (a +b + c) / 2;
+              double s = (a + b + c) / 2;
               double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
               System.out.println("Area " + area); 
 

@@ -17,7 +17,8 @@ public class AngleCalculation {
             if (type == 'r'){
               double convertedValue = value / Math.PI * 180;
               System.out.println("Angle: " + convertedValue + "d");
-             } else if (type == 'd'){
+
+             } else if (type == 'd') {
                double convertedValue = value * Math.PI / 180;  
             
             System.out.println("Angel: " + convertedValue + "r");
