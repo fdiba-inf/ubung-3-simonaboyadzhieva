@@ -6,6 +6,7 @@ public class AngleCalculation {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        
         double value;
         char type;
 
@@ -14,10 +15,10 @@ public class AngleCalculation {
             type = input.next().charAt(0);
 
             if (type == 'r'){
-              double convertedValue = value Math.PI * 180;
+              double convertedValue = value / Math.PI * 180;
               System.out.println("Angle: " + convertedValue + "d");
              } else if (type == 'd'){
-               double convertedValue = value Math.PI / 180;  
+               double convertedValue = value * Math.PI / 180;  
             
             System.out.println("Angel: " + convertedValue + "r");
             }
