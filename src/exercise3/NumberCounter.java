@@ -7,31 +7,27 @@ public class NumberCounter {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int positiveCount = 0;
-        int negativeCount = 0;
-        double sum = 0;
+        double a;
+        int posn = 0;
+        double sum = 0.0;
+        int negn = 0; 
 
-        System.out.println("Enter number: ");
-        int number = input.nextInt();
-        
-        while (number != 0) {
-         if (number > 0) {
-         positiveCount++;
-         } else {  
-         negativeCount++;
-         } 
-        
-        sum = sum + number;
+        do {
+          a = input.nextInt();
+          if (a > 0) {
+            posn++;
+            sum = sum + a;
+          }else if (a < 0) {
+            negn++;
+            sum = sum + a;
+          }
 
-        System.out.println("Enter number: ");
-        number = input.nextInt();
-        }
-        double average = sum / (positiveCount + negativeCount);
-        
-        System.out.println("Positive number: " + positiveCount);
-        System.out.println("Negative number: " + negativeCount);
+        }while (a != 0);
+        System.out.println("Positive numbers: " + posn);
+        System.out.println("Negative numbers: " + negn);
         System.out.println("Sum: " + sum);
-        System.out.println("Average: " + average);
+        double aver = sum / (posn+negn);
+        System.out.println("Average: " + aver);
     }
 
 }
